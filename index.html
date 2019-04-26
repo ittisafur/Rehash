@@ -1,84 +1,566 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Rehash</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,500" rel="stylesheet">
-	</head>
-	<body>
-		<div class="prime-wrapper">
-			<div class="mainmenu-wrapper">
-				<nav class="navbar navbar-expand-lg navbar-light">
-				  <a class="navbar-brand" href="#"><img class="logo" src="img/logo.svg" alt="Rehash"></a>
-				  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="icon-bar top-bar"></span>
-			    	<span class="icon-bar middle-bar"></span>
-			    	<span class="icon-bar bottom-bar"></span>	
-				  </button>
+    <head>
+        <meta charset="utf-8" />
+        <title>Rehash</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,500" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+        <link rel="stylesheet" href="css/fluid-gallery.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <div class="prime-wrapper">
+            <div class="mainmenu-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><img class="logo" src="img/logo.svg" alt="Rehash"/></a>
+                    <button
+                        class="navbar-toggler collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
 
-				  <div class="collapse navbar-collapse mainmenu" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">About</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Present </a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Chairman</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Management</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Products</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Certification</a>
-				      </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">Future Plan</a>
-					  </li>
-					  <li class="nav-item">
-				        <a class="nav-link" href="#">CSR</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Contact</a>
-				      </li>
-				    </ul>
-				    
-				  </div>
-				</nav>
-			</div>
+                    <div
+                        class="collapse navbar-collapse mainmenu"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#present">Present </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#chairman">Chairman</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#management">Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#product">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certification">Certification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#fplan">Future Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#csr">CSR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><!-- END Mainmenu Wrapper -->
 
-			<div class="carousel-wrapper">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				  <ol class="carousel-indicators">
-				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				  </ol>
-				  <div class="carousel-inner">
-				    <div class="carousel-item active">
-				      <img class="d-block w-100" src="https://sharif-enterprise.com/wp-content/themes/sharif-enterprise/assets/images/slider/slider-1.jpg" alt="First slide">
-				    </div>
-				    <div class="carousel-item">
-				      <img class="d-block w-100" src="https://sharif-enterprise.com/wp-content/uploads/2018/12/slider-2.jpg" alt="Second slide">
-				    </div>
-				    <div class="carousel-item">
-				      <img class="d-block w-100" src="https://sharif-enterprise.com/wp-content/uploads/2018/12/slider-3.jpg" alt="Third slide">
-				    </div>
-				  </div>
-				  
-				  </a>
-				</div>
-			</div>
-		</div>
+            <div class="carousel-wrapper">
+                <div class="banner_images owl-carousel">
+                    <div class="first_image">
+                        <img src="img/1.jpg" alt="" class="img-responsive" />
+                    </div>
+                    <div class="second_image">
+                        <img src="img/2.jpg" alt="" class="img-responsive" />
+                    </div>
+                    <div class="third_image">
+                        <img src="img/3.jpg" alt="" class="img-responsive" />
+                    </div>
+                </div>
+            </div><!-- END Carousel Wrapper -->
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+            <div id="about" class="about-wrapper py-5 px-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="upper-about">
+                            <div class="page-title">
+                                <h3 class="text-center">Discover Rehash</h3>
+                            </div>
+
+                            <div class="py-5">
+                                <h4 class="text-center">What is Rehash</h4>
+                                <p class="text-center">
+                                    Literally, REHASH means ‘an arrangement of
+                                    ideas, pieces of writing or pieces of films
+                                    into a new form but without any great change
+                                    or improvement’(Oxford Dictionary). The
+                                    naming implies the production of the same
+                                    old - rather improved goods and supplies to
+                                    meet the demand of the modern garments.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- END upper-about -->
+
+                        <div class="lower-about">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-margin" data-ride="carousel">
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block w-100" src="img/6.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 my-2">
+                                    <h4>Mission</h4>
+                                    <p>
+                                        To provide one stop solution in the
+                                        field of sourcing apparel accessories
+                                        through innovative and eco-friendly
+                                        efforts maintaining world class quality
+                                        in order to bring satisfaction to our
+                                        consumers.
+                                    </p>
+                                    <h4>Vision</h4>
+                                    <p>
+                                        To pursue excellence in manufacturing
+                                        apparel accessories for achieving the
+                                        confidence of global, diversified and
+                                        multinational brands.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END lower-about -->
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <h3 class="text-center">Our Values</h3>
+                            <p>To our customers we offer</p>
+                            <ul>
+                                <li>
+                                    A commitment to provide best quality product
+                                    and delivery in time.
+                                </li>
+                                <li>
+                                    Producing best quality leather patches and
+                                    garments accessories
+                                </li>
+                                <li>
+                                    Quick response to our valued customers in
+                                    terms of product development.
+                                </li>
+                            </ul>
+                            <p>To our employees we offer</p>
+                            <ul>
+                                <li>A good working environment.</li>
+                                <li>Encouraging for team work.</li>
+                                <li>
+                                    Providing educate training for the career
+                                    development
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END values-about -->
+                    </div>
+                </div>
+            </div><!-- END About-wrapper -->
+            
+            <div id="present" class="present-wrapper my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="inner-present-section">
+                                <div class="page-title">
+                                    <h3 class="text-center">
+                                        PRESENT STATUS OF THE COMPANY
+                                    </h3>
+                                </div>
+                                <div class="padt">
+                                    <p class="text-center">
+                                        With a vision of expanding the production
+                                        range, the company has recently built its
+                                        own factory over an area of around 1500
+                                        square meter in Tongi Industrial Area. A
+                                        good number of machineries have been
+                                        incorporated to build the capability of
+                                        producing wide range of products that would
+                                        provide one stop solution to the customers.
+                                        At present the company can produce Total 30
+                                        workers are involved in the line production
+                                        process who operate a total number of 10
+                                        major and few other minor machines. Each
+                                        major machines are able to produce around
+                                        5000 products of average size each day. The
+                                        company also takes utmost care on timely
+                                        delivery and quality control of its products
+                                        up to the satisfaction level of the
+                                        customers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END Present Wrapper -->
+
+            <div id="chairman" class="chairman-wrapper py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 my-5">
+                            <div class="page-title">
+                                <h3 class="text-center">
+                                    MESSAGE FROM THE CHAIRMAN
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <div class="inner-chairman-section">
+                                <img
+                                    src="img/prime.png"
+                                    class="rounded img-responsive"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="padt">
+                               <p>
+                                   With a vision of expanding the production range,
+                                   the company has recently built its own factory
+                                   over an area of around 1500 square meter in
+                                   Tongi Industrial Area. A good number of
+                                   machineries have been incorporated to build the
+                                   capability of producing wide range of products
+                                   that would provide one stop solution to the
+                                   customers. At present the company can produce.
+                                   Total 30 workers are involved in the line
+                                   production process who operate a total number of
+                                   10 major and few other minor machines. Each
+                                   major machines are able to produce around 5000
+                                   products of average size each day. The company
+                                   also takes utmost care on timely delivery and
+                                   quality control of its products up to the
+                                   satisfaction level of the customers.
+                               </p> 
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Chairman-wrapper -->
+
+            <div id="management" class="management-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center">Management</h3>
+                    </div>
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img
+                                    src="img/prime.png"
+                                    alt=""
+                                    class="img-responsive"
+                                />
+                                <p>Designation -- <span>Managing Director</span></p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <img
+                                    src="img/prime.png"
+                                    alt=""
+                                    class="img-responsive"
+                                />
+                                <p>Designation -- <span>Managing Director</span></p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <img
+                                    src="img/prime.png"
+                                    alt=""
+                                    class="img-responsive"
+                                />
+                                <p>Designation -- <span>Managing Director</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END Management-wrapper -->
+
+            <div id="product" class="product-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center">Our Products</h3>
+                    </div>
+
+                    <div class="my-5">
+                        <div class="container gallery-container">
+                              
+                            <div class="tz-gallery">
+                          
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/9.jpg">
+                                            <img src="img/9.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/10.jpg">
+                                            <img src="img/10.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/11.jpg">
+                                            <img src="img/11.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="row"> 
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/12.jpg">
+                                            <img src="img/12.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/13.jpg">
+                                            <img src="img/13.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a class="lightbox" href="img/14.jpg">
+                                            <img src="img/14.jpg" alt="Park" class="card-img-top">
+                                            </a>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+                          
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END product-wrapper -->
+
+            <div id="certification" class="certification-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center">
+                            Certification and Compliance
+                        </h3>
+                    </div>
+                    <p class="text-center pad-second py-4">The company has achieved a number of certifications from world class organizations which are mentioned below:</p>
+                    <div class="row pad-second">
+
+                        <div class="col-md-4">
+                            <img src="img/certification.png" alt="" class="img-responsive"/>
+                            <p>
+                                Oeko-Tex Certificate Standard 100, Class 1, on
+                                PU Leather Patch
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/certification.png" alt="" class="img-responsive"/>
+                            <p>
+                                Oeko-Tex Certificate Standard 100, Class 1, on
+                                PU Leather Patch
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/certification.png" alt="" class="img-responsive"/>
+                            <p>
+                                Oeko-Tex Certificate Standard 100, Class 1, on
+                                PU Leather Patch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END certification wrapper -->
+
+            <div id="fplan" class="future-plan-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center ">
+                            Future Plan
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <p class="py-5">With the global trend of Sustainable Development, the company plans to maintain a consistent growth by earning the confidence of international class buyers. The company also dreams to build a recognized ‘Green Factory’ in ntinuation of developing the trust of its customers. </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END Future-plan -->
+
+            <div id="csr" class="csr-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center ">
+                            csr
+                        </h3>
+                    </div>
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-md-11 mx-auto">
+                                <h4>Building Safety</h4>
+                                <p>The factory building is designed with sufficient fire safety, lightening protector etc. For fire safety, regular training on the use of fire extinguishers and evacuation plan are provided to the workers. Adequate fire exits have also been considered in the building design. The factory is also built with adequate light and ventilation facilities</p>
+
+                                <h4>Health</h4>
+                                <p>The workers have adequate access to purified water and sanitation facilities. They also enjoy regular health check from nearby clinics, and they have been medically insured as per the instruction of BGPMEA and code of conduct of Social compliance.</p>
+
+                                <h4>Working Conditions</h4>
+                                <p>We treat all our workers with respect and dignity and encourage all management, staff and worker – developing lawful, friendly and healthy workplace. The company does not use corporal punishment or any other form of physical or psychological coercion. Common dining, prayers, games/sports and various social activities are conducted regularly to build a cohesive and friendly environment for the workers. Adequate cleanliness is maintained in and around the workplace to provide a hygienic working environment to the workers. </p>
+
+                                <h4>Exemption of Child Labor</h4>
+                                <p>Child labor is forbidden as defined by the ILO and United Nations conventions and/or by National Law. No person irrespective of male or female genderwho has not completed 14 years of age are not allowed to recruit and employ of any nature of job.</p>
+
+                                <h4>Environmental Issues</h4>
+                                <p>Our company is firmly committed to comply with all relevant/applicable environmental legislation of Bangladesh Government to ensure environmental protection in the process of using raw materials, manufacturing products and discharging wastes.The company follows the guidelines and standard methods of various aspects of the environmental conservation and rules of the concerned regulatory bodies. It does not only avoids carbon emission,but also all the chemical wastes are disposed off in accordance with local environmental laws. Various wastes of the manufactured products are sold to other manufacturers as a part of recycling process. Thus, the company ensures negligible damage to the environment as well as sets examples to inspire other manufacturers to care for the environment. </p>
+
+                                <h4>Safety in Operation and First Aid</h4>
+                                <p>Workers are briefed regularly about safety in operation, and they are closely monitored by supervisors while employed in machine operation. In addition, appropriate aprons and uniforms are provided to the workers for safety in work. Adequate first aid kits are stored in accessible areas of the factory and regular briefing is given on their use. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END CSR wrapper -->
+
+            <div id="contact" class="contact-wrapper py-5">
+                <div class="container">
+                    <div class="page-title">
+                        <h3 class="text-center">Contact Us</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <form class="py-5">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"><b>Name</b></label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  
+                                </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1"><b>Email</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                  <label for="exampleFormControlTextarea1"><b>Message</b></label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              <div class="text-center form-submit submit-hover">
+                                  <button type="submit" class="btn">Submit</button>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END CONTACT Wrapper -->
+
+            <footer class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="left-footer">
+                                <img class="logo" src="img/logo.svg" alt="Rehash"/>
+                                <p>A Sister Concern of <br> <b><a href="http://sharif-enterprise.com/">Sharif Enterprise</a></b></p>
+                                <p>Adding value to garments <br> through custom labels, <br> swing tags, trims and <br>packaging.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="center-footer">
+                                <h4>Why choose use</h4>
+                                <ul>
+                                    <li>Timely Inquiry followed!</li>
+                                    <li>Best Price Offered!</li>
+                                    <li>Best Quality Checked!</li>
+                                    <li>Fast Production Time </li>
+                                    <li>Arranged!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="center-right-footer">
+                                <h4>Our Office</h4>
+                                <ul>
+                                    <li>Holding-2-0, Haji Noab Ali Road</li>
+                                    <li>Boro Deora, Tongi</li>
+                                    <li>Gazipur</li>
+                                    <li>Phone: <a href="tel:+8801970429482">01970429482</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="right-footer">
+                                <h4>Connect with us</h4>
+                                <p>for the latest trends and techniques.</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-footer my-1 text-center">
+                        <p><i class="far fa-copyright"></i> Rehash Accessories & Sourcing Ltd. Website designed and developed by <b><a href="https://ittisafur.com/" target="_blank">MD Ittisafur Rahman</a></b> </p>
+                    </div>
+                    <p></p>
+                </div>
+            </footer><!-- END Footer -->
+
+        </div><!-- END Prime Wrapper -->
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
