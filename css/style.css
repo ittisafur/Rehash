@@ -9,9 +9,9 @@
 h3{
 	color: var(--headingcolor);
 	font-family: 'Roboto', sans-serif;
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 300;
-
+	letter-spacing: 1px;
 }
 h4{
 	color: var(--headingcolor);
@@ -21,6 +21,7 @@ p{
 	color: var(--paragraphcolor);
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
+    letter-spacing: 1.5px;
 }
 body{
 	font-family: 'Nunito', sans-serif;
@@ -266,10 +267,6 @@ input, textarea {
 
 .product-wrapper img{
 	padding-bottom: 15px;
-}
-
-.csr-wrapper h4{
-	text-align: center;
 }
 
 /* Multiple Classes */

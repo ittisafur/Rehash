@@ -1,4 +1,8 @@
 $(function() {
+
+    // Trigging animation
+    new WOW().init();
+
     $('.banner_images').owlCarousel({
         items: 1,
         loop: true,
