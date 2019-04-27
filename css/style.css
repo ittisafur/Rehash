@@ -1,5 +1,5 @@
 /*-- Var --*/
-@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Montserrat:300,400,500');
 :root{
 	--lightgrey: #F8F2F2;
 	--headingcolor: #457F54;
@@ -8,20 +8,37 @@
 
 h3{
 	color: var(--headingcolor);
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
+span::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+h3::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
 h4{
 	color: var(--headingcolor);
 	font-size: 26px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500
+}
+h4::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
 }
 p{
 	color: var(--paragraphcolor);
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
-    letter-spacing: 1.5px;
+}
+p::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
 }
 body{
 	font-family: 'Nunito', sans-serif;
@@ -78,8 +95,7 @@ body{
 	/*background: var(--lightgrey) !important;*/
 }
 .mainmenu ul li a{
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
 	color: #457F54 !important;
 }
 
@@ -236,7 +252,7 @@ input, textarea {
 	content: '';
 	position: absolute;
 	width: 300px;
-	height: 2px;
+	height: 1px;
 	background-color: var(--headingcolor);
 	bottom: -10px;
 	transform: translate( -50% , -50% );
@@ -245,7 +261,7 @@ input, textarea {
 	content: '';
 	position: absolute;
 	width: 80px;
-	height: 4px;
+	height: 3px;
 	background-color: var(--headingcolor);
 	bottom: -12px;
 	transform: translate( -50% , -50% );
