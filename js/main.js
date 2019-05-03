@@ -7,9 +7,11 @@ $(function() {
         items: 1,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 3500,
         autoplayHoverPause: true,
-        dots: false
+        dots: false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
     })
     $('.about-carousel').owlCarousel({
         items: 1,
